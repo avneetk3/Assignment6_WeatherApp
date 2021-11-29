@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset= "UTF-8">
+    <!--meta name="viewport" content="width-device-width, initial-scale=1.0"-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+    crossorigin="anonymous"
+  />
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+  <title>My Weather App</title>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  </head>
+<body>
+  <header class="jumbotron">
+    <h3 class="display-3">Weather Dashboard</h3>
+  </header>
+  <div class ="grid-container">
+  <div class = "grid-child" class = "container-1" id = "container-1">
+    <h4>Search for the City:</h4>
+  <input  id = "input"class="input" type="text" placeholder="type a city"><br>
+  <button class="search  btn-sm btn-block btn-outline-primary py=0" style="size: 1em;" id = "search" div= "search">search</button>
+  <div id = "city-btn" class= "btn-grid">
+  <button id ="btn" class ="btn search btn-sm btn-block btn-outline-primary py=0 "></button>
+  <!--<button id ="btn" class ="btn search "></button>
+  <button id ="btn" class ="btn search "></button>
+  <button id ="btn" class ="btn search "></button>
+  <button id ="btn" class ="btn search  "></button>
+  <button id ="btn" class ="btn search  "></button>
+  <button id ="btn" class ="btn search  "></button>
+  <button id ="btn" class ="btn search "></button>-->
+  </div>
+  </div>
+  <div  class = "grid-child">
+  <div class="container">
+    <div class="col">
+    <div id="location" class = "location"></div>
+    <div id = "cityName" class="cityName"></div>
+    <!--<div id = "date" class="date">-->
+      <div id="icon" class="icon"><img id="wicon" class = "wicon" src=" " alt="Weather icon"></div>
+
+    <!--</div>-->
+    <div id = "temperature" class="temperature"></div>
+    <div id="humidity" class="humidity"></div>
+    <div id= "weather" class="weather"></div>
+    <div id= "windSpeed" class="windSpeed"></div>
+    <div id= "uvi" class="uvi"></div>
+    </div>
+  </div>
+  <div id = "weekly" class ="weekly">
+    <div class="container-fluid">
+      <div class="col">
+        <div class ="forecast" id= "forecast"><h3>5 Day Forecast:</h3></div>
+        <div class="row" >
+          <div class="col mini-box1"  id="mini-box1"></div>
+          <div class="col mini-box2" id="mini-box2"></div>
+          <div class="col mini-box3"id="mini-box3"></div>
+          <div class="col mini-box4" id="mini-box4"></div>
+          <div class="col mini-box5" id="mini-box5"></div>
+        </div>
+     </div>
+    </div>
+  </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>

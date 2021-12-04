@@ -29,7 +29,7 @@ btn.classList.add('hide');
     }
 
 button.addEventListener('click', function(){
-var requestUrl= "http://api.openweathermap.org/data/2.5/weather?q="+input.value+"&APPID=c2d6ccf48c2c6c33cd0d7c6be503d255";
+var requestUrl= "https://api.openweathermap.org/data/2.5/weather?q="+input.value+"&APPID=c2d6ccf48c2c6c33cd0d7c6be503d255";
 fetch(requestUrl)
 .then(response => response.json())
 .then(data => {
@@ -43,7 +43,7 @@ fetch(requestUrl)
   var weatherImg = document.getElementById("wicon");
   var weatherImg1= data['weather'][0]['icon'];
 
-  var iconurl = "http://openweathermap.org/img/w/" + weatherImg1 + ".png";
+  var iconurl = "https://openweathermap.org/img/w/" + weatherImg1 + ".png";
   weatherImg.setAttribute("src", iconurl);
 
   var long = data['coord']['lon'];

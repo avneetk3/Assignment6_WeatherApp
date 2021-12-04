@@ -72,6 +72,12 @@ body.city {
     width: 250px;
     border-color: black;
 }
+.uvi{
+    color: black;
+    background-color: green;
+    width: fit-content;
+
+}
 .container
 {
         position: relative;
